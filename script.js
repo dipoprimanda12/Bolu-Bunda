@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const main = document.getElementById("main-content");
   const opening = document.getElementById("opening");
 
-  const text = "SELAMAT DATANG DI TOKO KUE KAMI";
+  const text = "Selamat Datang Di Website Bolu-Bunda";
   let i = 0;
 
   function typeWriter() {

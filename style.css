@@ -116,7 +116,7 @@ nav {
 /* Cart Icon */
 /* Keranjang Belanja / Cart Icon */
 .cart-icon {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   cursor: pointer;
   position: relative;
@@ -646,8 +646,8 @@ a:hover {
   }
 
   .nav {
-    font-size: 0.8rem;
-    padding: 5px 7px;
+    font-size: 0.3rem;
+    padding: 4px 6px;
   }
 
   footer {
@@ -675,7 +675,7 @@ a:hover {
 
   nav {
     display: flex;
-    gap: 10px;
+    gap: 0;
     flex-grow: 1;
     justify-content: center;
   }
@@ -686,7 +686,16 @@ a:hover {
 
   .nav {
     font-size: 0.9rem;
-    padding: 4px 10px;
+    padding: 4px 6px;
+  }
+  .typewriter-text {
+    font-size: 1rem;
+    font-weight: bold;
+    border-right: 2px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+    font-family: "Pacifico", cursive;
   }
 
   /* Jika nav terlalu panjang, kecilkan ukuran font */

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolu-Bunda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- Opening Screen -->
+    <div id="opening" class="opening-screen">
+      <h1 class="typewriter-text"></h1>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="logo"><img src="img/logo.jpg" alt="logo" /></div>
+      <nav>
+        <a class="nav" href="#beranda">Beranda</a>
+        <a class="nav" href="#katalog">Produk</a>
+        <a class="nav" href="#kontak">Kontak</a>
+      </nav>
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cart-badge">0</span>
+      </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main id="main-content" style="display: none">
+      <!-- Hero -->
+      <section id="beranda" class="hero">
+  <canvas id="particle-background"></canvas>
+
+  <div class="hero-frame">
+    <p>
+      Kami menghadirkan berbagai pilihan aneka Bolu rumahan yang dibuat dari
+      resep turun-temurun,
+      <strong>bahan berkualitas</strong>, dan penuh cinta.
+    </p>
+    <p>
+      <strong style="color: green">✅ Bersertifikasi HALAL MUI</strong> –
+      Aman, higienis, dan terpercaya.
+    </p>
+    <p>
+      <em>Bolu Bunda</em> adalah sebuah karya dan cita rasa manis yang
+      menyatukan kebahagiaan di setiap meja keluarga.
+    </p>
+    <a href="#katalog" class="btn">Lihat Produk Kami</a>
+  </div>
+</section>
+
+      <!-- Katalog Produk -->
+      <section class="produk-grid fade-in" id="katalog">
+        <div
+          class="produk-card fade-section"
+          data-id="1"
+          data-nama="Bolu Pandan Kukus Keju"
+          data-harga="50000"
+        >
+          <img
+            src="https://cdn0-production-images-kly.akamaized.net/zmijziCxWOD8od7Uge4ZEIeWxnw=/0x2575:3456x4523/1200x675/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3513429/original/066994600_1626492092-Ika_Rahma_H__2_.jpg"
+            alt="Bolu Pandan Kukus keju"
+          />
+          <h3>Bolu Pandan Kukus Keju</h3>
+          <p class="harga">Rp50.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="2"
+          data-nama="Bolu Pandan Kukus Mini"
+          data-harga="1000"
+        >
+          <img
+            src="https://img-global.cpcdn.com/recipes/c680eac76842c494/680x482cq90/putu-ayu-tanpa-kelapa-foto-resep-utama.jpg"
+            alt="Bolu Pandan Kukus Mini"
+          />
+          <h3>Bolu Pandan Kukus Mini</h3>
+          <p class="harga">Rp1.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="3"
+          data-nama="Paket Kue Risol"
+          data-harga="40000"
+        >
+          <img
+            src="https://i.pinimg.com/originals/47/90/8b/47908b5b8c13c2dae6e32b85fabfd4c8.jpg"
+            alt="Paket Kue Risol"
+          />
+          <h3>Paket Kue Risol</h3>
+          <p class="harga">Rp40.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="4"
+          data-nama="Bolu Meses Warna"
+          data-harga="70000"
+        >
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTupMaiqUJTto12aMe5yo4stOjzKwFUocdBll3lKlDwo81oxDT_"
+            alt="Bolu Messes Warna"
+          />
+          <h3>Bolu Meses Warna</h3>
+          <p class="harga">Rp70.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="5"
+          data-nama="Bolu Pisang"
+          data-harga="35000"
+        >
+          <img
+            src="https://depostjabar.com/wp-content/uploads/2024/04/Resep-Bolu-Pisang-Manis-Enak-dan-Padat.webp"
+            alt="Bolu Pisang"
+          />
+          <h3>Bolu Pisang</h3>
+          <p class="harga">Rp35.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="6"
+          data-nama="Paket Nastar"
+          data-harga="150000"
+        >
+          <img src="img/nastar.jpeg" alt="Paket Nastar" />
+          <h3>Paket Nastar</h3>
+          <p class="harga">Rp150.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="7"
+          data-nama="Kue Ulang Tahun"
+          data-harga="100000"
+        >
+          <img src="img/ulta1.jpeg" alt="Kue Ulang Tahun" />
+          <h3>Kue Ulang Tahun</h3>
+          <p class="harga">Rp100.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="8"
+          data-nama="Paket Bolu Pisang"
+          data-harga="75000"
+        >
+          <img
+            src="https://depostjabar.com/wp-content/uploads/2024/04/Resep-Bolu-Pisang-Manis-Enak-dan-Padat.webp"
+            alt="Paket Bolu Pisang"
+          />
+          <h3>Paket Bolu Pisang</h3>
+          <p class="harga">Rp75.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="9"
+          data-nama="Bolu Pandan Coklat-Keju"
+          data-harga="50000"
+        >
+          <img
+            src="https://static.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/p1/995/2024/11/22/t1gqybPz-VYhd-2097581232.jpg"
+            alt="Bolu Pandan Coklat-Keju"
+          />
+          <h3>Bolu Pandan Coklat-Keju</h3>
+          <p class="harga">Rp50.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="11"
+          data-nama="Bolu Mini"
+          data-harga="1000"
+        >
+          <img src="img/bolu kecil 1.jpeg" alt="Bolu Mini" />
+          <h3>Bolu Mini</h3>
+          <p class="harga">Rp1.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="12"
+          data-nama="Bolu Pandan Mini"
+          data-harga="5000"
+        >
+          <img src="img/bolu kecil 2.jpeg" alt="Bolu Pandan Mini" />
+          <h3>Bolu Pandan Mini</h3>
+          <p class="harga">Rp5.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="13"
+          data-nama="paket Hantaran 1"
+          data-harga="65000"
+        >
+          <img
+            src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZa05waniZkTbXqxSLgqFW1sBGBPMucnJEXDWOVgXeq2EMgdf"
+            alt="Paket Hantaran 1"
+          />
+          <h3>Paket Hantaran 1</h3>
+          <p class="harga">Rp65.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="14"
+          data-nama="Paket Hantaran 2"
+          data-harga="65000"
+        >
+          <img
+            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScvEvAWBOBVqG2SvD1K3jdno1CiOC_UDlpUMe7jVSs5hG375Xi"
+            alt="Paket Hantaran 2"
+          />
+          <h3>Paket Hantaran 2</h3>
+          <p class="harga">Rp65.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="15"
+          data-nama="Paket Hantaran 3"
+          data-harga="65000"
+        >
+          <img
+            src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWAFeCMnkiOgYJ6WIiq1hWkVBmcUpCoRP7YILcxy5pIdpqLvS6"
+            alt="Paket Hantaran 3"
+          />
+          <h3>Paket Hantaran 3</h3>
+          <p class="harga">Rp65.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+
+        <div
+          class="produk-card fade-section"
+          data-id="16"
+          data-nama="Chocolate Cake"
+          data-harga="5000"
+        >
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY91j94QUGHXuUpvRJF2P-g1d2yXMKY6jS1LUHj2f8ZOadUYij"
+            alt="Chocolate Cake"
+          />
+          <h3>Chocolate Cake</h3>
+          <p class="harga">Rp5.000</p>
+          <button class="add-btn">Tambah</button>
+        </div>
+      </section>
+
+      <!-- Kontak -->
+      <section class="kontak fade-in" id="kontak">
+        <h2>Kontak Kami</h2>
+        <p>📞 0822-7826-5310</p>
+        <p>
+          📍 jln.propingsi,temboro selawe.puhtelu,RT 01 Rw 04 Kec,Karas Kab
+          Magetan,Jatim
+        </p>
+        <a href="mailto:ss4756579@gmail.com">Kirim Email</a>
+
+        <a href="https://wa.me/6282278265310" target="_blank">Chat di WhatsApp</a>
+        <!-- Google Maps -->
+        <div class="maps-container" style="margin-top: 20px">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31640.011858294973!2d111.35318941957955!3d-7.574815516116018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7995e4e503fbdf%3A0x2ea1453d66cc40e3!2sPondok%20Pesantren%20Al%20Fatah%20Temboro%20Poh%20Telu!5e0!3m2!1sen!2sid!4v1750316029589!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></>"
+            width="100%"
+            height="300"
+            style="border: 0; border-radius: 8px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Komentar dan Rating -->
+      <section class="komentar fade-in">
+        <h2>🗨️ Komentar & Rating</h2>
+        <form id="form-komentar">
+          <input type="text" id="nama" placeholder="Nama Anda" required />
+          <textarea
+            id="pesan"
+            placeholder="Tulis komentar Anda..."
+            required
+          ></textarea>
+          <label for="rating">Rating:</label>
+          <div id="rating-input">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+          </div>
+          <input type="hidden" id="rating" value="0" />
+          <button type="submit">Kirim Komentar</button>
+        </form>
+        <div id="list-komentar"></div>
+      </section>
+    </main>
+
+    <!-- Sidebar Keranjang -->
+    <aside class="cart-box" id="cart-box">
+      <h3>Keranjang Belanja</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="total-price">Rp0</span></p>
+      <form id="checkout-form">
+        <input type="text" id="name" placeholder="Nama lengkap" required />
+        <input type="tel" id="phone" placeholder="Nomor HP (08xxx)" required />
+        <textarea id="note" placeholder="Catatan (opsional)"></textarea>
+        <button type="submit" class="checkout-btn">
+          Checkout via WhatsApp
+        </button>
+      </form>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 . Dipo Primanda .</p>
+      <p> 📞 0896-0279-9141 | IG : dipoprimanda__ </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

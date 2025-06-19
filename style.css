@@ -697,3 +697,12 @@ a:hover {
     }
   }
 }
+/* Cegah scroll horizontal */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+body {
+  touch-action: manipulation; /* Mencegah zoom double-tap di Safari */
+}

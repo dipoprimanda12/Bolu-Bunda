@@ -500,7 +500,7 @@ a:hover {
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 20px;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.632);
+  background: rgb(255, 255, 255);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.582);
   text-align: center;
   animation: fadeScaleIn 1.2s ease-in-out both;
@@ -534,7 +534,7 @@ a:hover {
 
 .hero-frame strong,
 .hero-frame em {
-  color: #f28e9d;
+  color: #000000;
 }
 
 .hero-frame .btn {
@@ -702,7 +702,4 @@ html,
 body {
   overflow-x: hidden;
   width: 100%;
-}
-body {
-  touch-action: manipulation; /* Mencegah zoom double-tap di Safari */
 }
